@@ -10,7 +10,7 @@ const getStyleByType = (type) => {
     case 'circle':
       return { height: 40, width: 40, borderRadius: 100000 }
     case 'text':
-      return { height: 8, width: '100%', borderRadius: 4, marginTop: 6, marginBottom: 6 };
+      return { height: 8, width: '100%', borderRadius: 4, marginTop: 8, marginBottom: 8 };
     case 'rect':
     default:
       return { height: 40, width: '100%', borderRadius: 0 };

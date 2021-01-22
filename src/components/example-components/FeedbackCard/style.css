@@ -1,0 +1,29 @@
+.FeedbackCard-container {
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFF;
+  padding: 16px;
+  display: flex;
+}
+
+.FeedbackCard-user-container {
+  width: 100px;
+  margin-right: 16px;
+}
+
+.FeedbackCard-description-container {
+  flex: 1;
+}
+
+.FeedbackCard-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+

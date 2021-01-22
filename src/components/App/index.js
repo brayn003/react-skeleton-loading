@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import FeedbackCard from '../example-components/FeedbackCard';
 import InstaCard from '../example-components/InstaCard';
 
 import './style.css';
@@ -20,6 +21,9 @@ function App() {
       <div className="App-example-container">
         <div className="App-section">
           <InstaCard loading={loading} />
+        </div>
+        <div className="App-section">
+          <FeedbackCard loading={loading} />
         </div>
       </div>
     </div>

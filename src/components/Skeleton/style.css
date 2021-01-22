@@ -10,7 +10,7 @@
 }
 
 .Skeleton-anim-wave {
-  background-image: linear-gradient(to right, #DDD 0%,#DDD 48%,#FFF 50%,#DDD 52%,#DDD 100%);
+  background-image: linear-gradient(90deg, #DDD 0%,#DDD 48%,#FFF 50%,#DDD 52%,#DDD 100%);
   background-repeat: no-repeat;
-  animation: Skeleton-wave 3s ease-in-out infinite;
+  animation: Skeleton-wave 3s linear infinite;
 }
