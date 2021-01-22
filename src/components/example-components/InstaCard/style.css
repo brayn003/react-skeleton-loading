@@ -1,0 +1,42 @@
+.InstaCard-container {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFF;
+}
+
+.InstaCard-header-container {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.InstaCard-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+
+.InstaCard-username {
+  font-weight: 700;
+}
+
+.InstaCard-location {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.InstaCard-img {
+  display: block;
+  width: 100%;
+}
+
+.InstaCard-inner-container {
+  padding: 16px;
+}
+
