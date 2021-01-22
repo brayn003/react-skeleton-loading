@@ -10,7 +10,10 @@ const InstaCard = ({ loading }) => {
         {loading ? (
           <Skeleton style={{marginRight: 8}} loading type="circle" width={40} height={40} />
         ) : (
-          <div className="InstaCard-avatar" style={{backgroundImage:`url(https://i.pravatar.cc/200)`}} />
+          <div 
+            className="InstaCard-avatar" 
+            style={{backgroundImage:`url(https://cdn.faceshapeapp.com/q/Jrb2KdW_mdJlFGBR__256x256.jpg?w=640)`}} 
+          />
         )
         }
         <div>

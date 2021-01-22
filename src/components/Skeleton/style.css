@@ -4,12 +4,13 @@
   }
 }
 
-.Skeleton-anim-wave {
+.Skeleton-root {
   display: block;
   background-color: #DDD;
+}
+
+.Skeleton-anim-wave {
   background-image: linear-gradient(to right, #DDD 0%,#DDD 48%,#FFF 50%,#DDD 52%,#DDD 100%);
   background-repeat: no-repeat;
-  border-radius: 4px;
-  line-height: 1;
   animation: Skeleton-wave 3s ease-in-out infinite;
 }
