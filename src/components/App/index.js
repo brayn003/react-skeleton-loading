@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import InstaCard from '../example-components/InstaCard';
-import Skeleton from '../Skeleton';
 
 import './style.css';
 

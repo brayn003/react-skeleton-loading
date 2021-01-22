@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const INITIAL_RECT = {
   x: 0,
@@ -9,7 +9,8 @@ const INITIAL_RECT = {
 
 const useBoundingRect = (elementRef) => {
   const [boundingRect, setBoundingRect] = useState(INITIAL_RECT);
-  useEffect(() => {
+
+  const calcBoundingRect = useCallback(() => {
     if(elementRef.current) {
       const rect = elementRef.current.getBoundingClientRect()
       setBoundingRect({
@@ -19,9 +20,13 @@ const useBoundingRect = (elementRef) => {
         width: rect.width
       });
     }
-  }, [elementRef]);
+  }, [])
 
-  return boundingRect;
+  useEffect(() => {
+    calcBoundingRect();
+  }, [calcBoundingRect]);
+
+  return { boundingRect, calcBoundingRect };
 }
 
 export default useBoundingRect;
