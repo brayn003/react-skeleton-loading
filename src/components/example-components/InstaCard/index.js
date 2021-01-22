@@ -1,12 +1,15 @@
 import React from 'react';
+import Skeleton from '../../Skeleton';
 
 import './style.css';
 
-const InstaCard = () => {
+const InstaCard = ({ loading }) => {
   return (
     <div className="InstaCard-container">
       <div className="InstaCard-header-container">
-        <div className="InstaCard-avatar" style={{backgroundImage:`url(https://i.pravatar.cc/200)`}} />
+        <Skeleton loading={loading}>
+          <div className="InstaCard-avatar" style={{backgroundImage:`url(https://i.pravatar.cc/200)`}} />
+        </Skeleton>
         <div>
           <p className="InstaCard-username">Rudraprasad Das</p>
           <p className="InstaCard-location">Mumbai</p>

@@ -20,15 +20,7 @@ function App() {
       </div>
       <div className="App-example-container">
         <div className="App-section">
-          {loading? ( 
-            <div style={{width: 300}}>
-              <Skeleton type="circle" style={{marginBottom: 16}} />
-              <Skeleton style={{marginBottom: 16}} />
-              <Skeleton style={{marginBottom: 16}} />
-              <Skeleton style={{marginBottom: 16}} />
-              <Skeleton />
-            </div>
-          ) : <InstaCard />}
+          <InstaCard loading={loading} />
         </div>
       </div>
     </div>
