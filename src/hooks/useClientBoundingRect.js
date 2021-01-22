@@ -20,7 +20,7 @@ const useBoundingRect = (elementRef) => {
         width: rect.width
       });
     }
-  }, [])
+  }, [elementRef])
 
   useEffect(() => {
     calcBoundingRect();

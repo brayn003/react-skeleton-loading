@@ -28,6 +28,10 @@ yarn start
 
   style: {}, // style object for extra styles
 
+  className: '', // additional classnames for root component
+
+  element: 'div' | 'span', // defaults to span
+
 }
 ```
 
