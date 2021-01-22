@@ -97,7 +97,19 @@ const Skeleton = ({
 
 Skeleton.propTypes = {
   type: PropTypes.oneOf(['rect', 'circle', 'text']),
-  style: PropTypes.shape({})
+  style: PropTypes.shape({}),
+  element: PropTypes.oneOf(['div', 'span']),
+  loading: PropTypes.bool,
+  children: PropTypes.node,
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  className: PropTypes.string,
 }
 
 export default Skeleton;

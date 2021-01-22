@@ -1,18 +1,13 @@
 @keyframes Skeleton-wave {
-  /* 0% {
-    background-position: 0 0;
-  } */
-  100% {
+  to {
     background-position: 100vw 0;
   }
 }
 
 .Skeleton-anim-wave {
   display: block;
-  background-color: #CCC;
-  background-image: -moz-linear-gradient(left, #CCC 0%, #CCC 48%, #FFF 50%, #CCC 52%, #CCC 100%); /* FF3.6-15 */
-  background-image: -webkit-linear-gradient(left, #CCC 0%,#CCC 48%,#FFF 50%,#CCC 52%,#CCC 100%); /* Chrome10-25,Safari5.1-6 */
-  background-image: linear-gradient(to right, #CCC 0%,#CCC 48%,#FFF 50%,#CCC 52%,#CCC 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-color: #DDD;
+  background-image: linear-gradient(to right, #DDD 0%,#DDD 48%,#FFF 50%,#DDD 52%,#DDD 100%);
   background-repeat: no-repeat;
   border-radius: 4px;
   line-height: 1;
