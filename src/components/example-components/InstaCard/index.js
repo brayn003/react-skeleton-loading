@@ -8,7 +8,7 @@ const InstaCard = ({ loading }) => {
     <div className="InstaCard-container">
       <div className="InstaCard-header-container">
         {loading ? (
-          <Skeleton style={{marginRight: 8}} loading type="circle" width={40} height={40} />
+          <Skeleton style={{marginRight: 8}} type="circle" width={40} height={40} />
         ) : (
           <div 
             className="InstaCard-avatar" 
@@ -19,8 +19,8 @@ const InstaCard = ({ loading }) => {
         <div>
           {loading ? (
             <>
-              <Skeleton width={100} style={{ marginBottom: 8 }} loading type="text" />
-              <Skeleton width={100} style={{ marginBottom: 8 }} loading type="text" />
+              <Skeleton width={100} type="text" />
+              <Skeleton width={100} type="text" />
             </>
           ) : (
             <>
@@ -32,7 +32,7 @@ const InstaCard = ({ loading }) => {
       </div>
       <div className="InstaCard-img-container">
         {loading ? (
-          <Skeleton height={240} loading />
+          <Skeleton height={240} />
         ) : (
           <img 
             className="InstaCard-img"
@@ -44,10 +44,10 @@ const InstaCard = ({ loading }) => {
       <div className="InstaCard-inner-container">
         {loading ? (
           <>
-            <Skeleton style={{ marginBottom: 8 }} loading type="text" />
-            <Skeleton style={{ marginBottom: 8 }} loading type="text" />
-            <Skeleton style={{ marginBottom: 8 }} loading type="text" />
-            <Skeleton style={{ marginBottom: 8 }} loading type="text" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
           </>
         ) : (
           <p>
